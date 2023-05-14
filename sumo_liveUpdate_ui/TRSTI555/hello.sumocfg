@@ -1,0 +1,29 @@
+<configuration>
+    <input>
+        <net-file value="hello2.net.xml"/>
+        <route-files value="hello1.rou.xml"/>
+        <additional-files value="detectors.add.xml"/>      
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="4500"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <extrapolate-departpos value="true"/>
+        <time-to-teleport value="120"/>
+        <ignore-junction-blocker value="1"/>
+        <time-to-teleport.highways value="1"/>
+        <lateral-resolution value="0.8"/>
+    </processing>
+
+    <gui_only>
+        <gui-settings-file value="osm.view.xml"/>
+        <start value="t"/>
+        <quit-on-end value="t"/>
+    </gui_only>
+
+</configuration>
